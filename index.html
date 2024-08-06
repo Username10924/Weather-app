@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js" defer></script>
+  </head>
+  <body>
+    <dialog>
+      <div class="load">
+        <h1 class="loading">Loading..</h1>
+        <img src="./icons/tube-spinner.svg" alt="spin" style="width: 64px" />
+      </div>
+    </dialog>
+
+    <header>
+      <img
+        class="day-night"
+        src="icons/weather-icons/day.svg"
+        alt="time"
+        style="width: 128px"
+      />
+
+      <div class="search">
+        <input type="text" placeholder="City" name="search" id="search" />
+        <button class="search-button">
+          <img
+            src="icons/search.svg"
+            alt="search"
+            style="
+              filter: brightness(0) saturate(100%) invert(48%) sepia(10%)
+                saturate(208%) hue-rotate(131deg) brightness(93%) contrast(84%);
+            "
+          />
+        </button>
+      </div>
+
+      <div class="toggle-unit">Celsius</div>
+    </header>
+    <div class="cards">
+      <h1 class="address">Riyadh</h1>
+
+      <div class="card-first">
+        <div class="card-header">
+          <img
+            class="weather-condition"
+            src="./icons/weather-icons/night.svg"
+            alt="weather-condition"
+            style="width: 128px"
+          />
+          <h5 class="date">2024/08/08</h5>
+          <h5 class="temp">106C</h5>
+        </div>
+
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+          minima.
+        </p>
+      </div>
+      <div class="card-second">
+        <div class="card-header">
+          <img
+            class="weather-condition"
+            src="./icons/weather-icons/night.svg"
+            alt="weather-condition"
+            style="width: 128px"
+          />
+          <h5 class="date">2024/08/08</h5>
+          <h5 class="temp">106C</h5>
+        </div>
+
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+          minima.
+        </p>
+      </div>
+      <div class="card-third">
+        <div class="card-header">
+          <img
+            class="weather-condition"
+            src="./icons/weather-icons/night.svg"
+            alt="weather-condition"
+            style="width: 128px"
+          />
+          <h5 class="date">2024/08/08</h5>
+          <h5 class="temp">106C</h5>
+        </div>
+
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+          minima.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
