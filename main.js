@@ -62,8 +62,8 @@ function getTemp(fahrenheit) {
   const unit = document.querySelector(".toggle-unit");
   let c = (fahrenheit - 32) / 1.8;
   if (unit.textContent == "Celsius") {
-    return Math.round(c * 10) / 10 + " Cº";
-  } else return Math.round(fahrenheit * 10) / 10 + " Fº";
+    return Math.round(c * 10) / 10 + "º C";
+  } else return Math.round(fahrenheit * 10) / 10 + "º F";
 }
 
 function setTemp(data) {
